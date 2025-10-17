@@ -10,11 +10,11 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 // Import product images
 import product1 from "./assets/product1.avif";
-import product2 from "./assets/Product2.avif";
-import product3 from "./assets/Product3.avif";
-import product4 from "./assets/Product4.avif";
-import product5 from "./assets/Product5.avif";
-import product6 from "./assets/Product6.avif";
+import product2 from "./assets/product2.avif";
+import product3 from "./assets/product3.avif";
+import product4 from "./assets/product4.avif";
+import product5 from "./assets/product5.avif";
+import product6 from "./assets/product6.avif";
 
 // Map products
 const products = [
