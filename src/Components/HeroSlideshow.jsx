@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 
 import tshirt1 from "../assets/tshirt1.avif";
 import totebag1 from "../assets/totebag1.avif";
-// import frame1 from "../assets/frame1.jpg";
 
 // Mobile images
 import slide1 from "../assets/mobile/1.avif";
@@ -30,7 +29,7 @@ const desktopSlides = [
     image: totebag1,
     caption: "Trendy Tote Bags 👜",
     bgPosition: "center 40%",
-  }
+  },
 ];
 
 // Mobile slides (order 1 → 6)
@@ -71,7 +70,7 @@ const HeroSlideshow = () => {
             <div
               className="w-full h-full flex flex-col items-center justify-center text-white relative"
               style={{
-                background: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${slide.image}) ${slide.bgPosition} / cover no-repeat`,
+                background: `linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(${slide.image}) ${slide.bgPosition} / cover no-repeat`,
               }}
             >
               <div className="text-center px-4 animate-fadeIn">

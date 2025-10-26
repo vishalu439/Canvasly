@@ -18,12 +18,12 @@ import product6 from "./assets/product6.avif";
 
 // Map products
 const products = [
-  { id: 1, name: "BTS Tote Bag", image: product1 },
-  { id: 2, name: "TV Show T-Shirt", image: product2 },
-  { id: 3, name: "Custom Tote Bag", image: product3 },
-  { id: 4, name: "Polaroids Mini Photo Prints", image: product4 },
-  { id: 5, name: "Custom PhotoFrame For Gifting", image: product5 },
-  { id: 6, name: "Custom Tshirts", image: product6 }
+  { id: 1, name: "BTS Tote Bag", image: product1, price: 199 },
+  { id: 2, name: "TV Show T-Shirt", image: product2, price: 399 }, // higher price
+  { id: 3, name: "Custom Tote Bag", image: product3, price: 199 },
+  { id: 4, name: "Polaroids Mini Photo Prints", image: product4, price: 199 },
+  { id: 5, name: "Custom PhotoFrame For Gifting", image: product5, price: 199 },
+  { id: 6, name: "Custom Tshirts", image: product6, price: 399 }, // higher price
 ];
 
 const Home = () => {
@@ -32,22 +32,18 @@ const Home = () => {
       <HeroBanner />
       <HeroSlideshow />
 
-
-<section className="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-  {products.map((p) => (
-    <ProductCard key={p.id} {...p} />
-  ))}
-</section>
-
-
-
+      <section className="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {products.map((p) => (
+          <ProductCard key={p.id} {...p} />
+        ))}
+      </section>
 
       {/* YouTube Shorts */}
       <YouTubeShorts videoId="YOUR_SHORTS_ID" />
-      <Testimonials/>
+      <Testimonials />
       <RecentOrders />
-      <About/>
-      <Footer/>
+      <About />
+      <Footer />
     </div>
   );
 };
