@@ -8,7 +8,7 @@ const HeroBanner = () => {
     "Bulk Orders Across India 🇮🇳",
     "Free Shipping on All Orders 🚚",
     "Your Brand, Your Design 💼",
-    `3,06,378 pcs sold last month 👕`
+    `56,378 pcs sold last month 👕`
   ];
 
   const [index, setIndex] = useState(0);
